@@ -196,13 +196,6 @@
     -->
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
 
-    <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
-    <array name="config_udfps_sensor_props" translatable="false" >
-        <item>540</item> <!-- sensorLocationX -->
-        <item>2164</item> <!-- sensorLocationY -->
-        <item>91</item> <!-- sensorRadius -->
-    </array>
-
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
@@ -275,7 +268,4 @@
 
     <!-- Type of the double tap sensor. Empty if double tap is not supported. -->
     <string name="config_dozeDoubleTapSensorType" translatable="false">org.lineageos.sensor.double_tap</string>
-
-    <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
-    <string name="config_dozeUdfpsLongPressSensorType" translatable="false">org.lineageos.sensor.udfps</string>
 </resources>
