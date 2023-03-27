@@ -30,6 +30,7 @@ BOARD_SHIPPING_API_LEVEL := 31
 BOARD_API_LEVEL := 31
 PRODUCT_SHIPPING_API_LEVEL := 31
 
+DEVICE_PREBUILT_PATH := device/motorola/hiphi-prebuilt
 # Inherit from motorola sm8475-common
 $(call inherit-product, device/motorola/sm8475-common/sm8475.mk)
 
@@ -39,6 +40,10 @@ PRODUCT_PACKAGES += \
     LineageSystemUIHiphi \
     SettingsProviderResHiphi \
     SystemUIResHiphi
+
+# Kernel
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PREBUILT_PATH)/dtb.img:dtb.img
 
 # Audio
 PRODUCT_COPY_FILES += \
